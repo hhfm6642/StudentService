@@ -4,14 +4,14 @@ node {
     def mvnHome
 
     environment {
-        GIT_CREDENTIALS_ID = "44bb31cd-b259-4160-a31c-64403b8982d3"
+        GIT_CREDENTIALS_ID = "5e732875-7d8e-4cc3-b115-cd6c82438f96"
     }
 
     stage('Preparation') {
         git changelog: false,
             credentialsId: '$GIT_CREDENTIALS_ID',
             poll: false,
-            url: 'https://github.com/deveshchanchlani/StudentService.git'
+            url: 'https://github.com/hhfm6642/StudentService.git'
         mvnHome = tool 'maven3'
     }
 
